@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- /bootstrap -->
+
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- /css -->
+
+
+  <!-- /mediaquery -->
+  <link rel="stylesheet" href="assets/mediaquery/mediaquery.css">
+<!-- /mediaquery -->
+
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <!-- /fontawesome -->
+
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- /google font -->
+
+  <title>Biglietto treno (Better)</title>
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <header>
+
+  </header>
+  <!-- /header -->
+
+  <!-- main -->
+  <main>
+ 
+      <!-- BLOCCO CREAZIONE BIGLIETTO -->
+
+      <div class="creazione">
+
+        <!-- BLOCCO TITOLO -->
+
+        <div class="titolo">
+          <h1 >Calcola il prezzo del tuo biglietto del treno</h1>
+        </div>
+
+        <!-- BLOCCO DATI UTENTE -->
+
+        <div class="datiUtente">
+
+          <div>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" name="nome" value="" placeholder="Nome">
+          </div>
+
+          <div>
+            <label for="cognome">Cognome</label>
+            <input id="cognome" type="text" name="nome" value="" placeholder="Cognome">
+          </div>
+
+          <div>
+            <label for="km">Km del tuo viaggio</label>
+            <input id="km" type="number" name="km" value="" placeholder="Numero">
+          </div>
+
+          <div>
+
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria">
+              <option value="Over65">Over 65</option>
+              <option value="Maggiorenne" selected>Maggiorenne</option>
+              <option value="Minorenne">Minorenne</option>
+
+            </select>
+
+          </div>
+
+          <div class="bottoni">
+
+            <button id="btnCrea" type="button" name="button">Crea Biglietto</button>
+
+            <button id="btnAnnulla" type="button" name="button"> Annulla Biglietto</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- BLOCCO BIGLIETTO DEL TRENO -->
+      
+
+
+      <div id="bigliettoTreno" class="biglietto">
+  <h2>Il tuo Biglietto</h2>
+
+
+        <table>
+          <thead>
+
+            <tr class="data">
+              <th>Nome Passeggero</th>
+              <th>Numero Treno</th>
+              <th>Carrozza</th>
+              <th>Prezzo Biglietto</th>
+              <th>Categoria</th>
+            </tr>
+
+          </thead>
+          <tbody>
+
+            <tr class="results">
+              <th id="nomePasseggero"></th>
+              <th id="numeroTreno"></th>
+              <th id="carrozza"></th>
+              <th id="prezzoBiglietto"></th>
+              <th id="categoriaUtente"></th>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+
+      </div>
+
+
+
+   
+
+  </main>
+  <!-- /main -->
+
+
+  <!-- footer -->
+  <footer>
+
+  </footer>
+  <!-- /footer -->
+
+
+  <script type="text/javascript" src="assets/js/script.js">
+
+  </script>
+
+
+</body>
+
+</html>

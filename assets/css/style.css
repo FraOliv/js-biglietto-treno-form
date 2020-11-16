@@ -1,0 +1,156 @@
+/* IMPOSTAZIONI GENERALI */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #B91450;
+  height: 1500px
+}
+
+/* IMPOSTAZIONI MAIN*/
+main {
+  width: 100%;
+  padding-top: 8% ;
+}
+
+h1, h2 {
+  font-size: 55px;
+  color: white;
+  text-align: center;
+}
+
+/* BLOCCO CREAZIONE BIGLIETTO  */
+
+.creazione {
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 50px;
+  padding: 2%;
+
+  border-radius: 5px;
+  align-items: center;
+}
+
+/* BLOCCO TITOLO */
+
+.titolo {
+  margin: 0 1%;
+
+  display: flex;
+}
+
+/* BLOCCO DATI UTENTE */
+
+.datiUtente {
+  background-color: white;
+  width: 58%;
+  padding: 2% 1%;
+  border: solid 1px #616b64;
+  border-radius: 5px;
+}
+
+.datiUtente > div {
+  margin-bottom: 20px;
+}
+
+.datiUtente label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.datiUtente input, .datiUtente select {
+  width: 100%;
+  height: 30px;
+  font-size: 17px;
+  color: #616b64;
+}
+
+.datiUtente .bottoni {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.datiUtente .bottoni button {
+  font-size: 17px;
+  width: 150px;
+  border-radius: 5px;
+  height: 35px;
+}
+
+
+.datiUtente .bottoni #btnCrea {
+  background-color: #B91450;
+  color: #fff;
+  border-color: #c41329;
+}
+
+.datiUtente .bottoni #btnAnnulla {
+  background-color: #616b64;
+  color: #fff;
+  border-color: #616b64;
+}
+
+/* BLOCCO BIGLIETTO DEL TRENO */
+
+.biglietto {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255);
+  border-radius: 5px;
+  filter: opacity(0);
+  transition: 0.5s;
+}
+
+.biglietto table {
+  width: 100%;
+  height: 100px;
+
+}
+
+.biglietto table th {
+  font-size: 20px;
+}
+
+/* classe creata con js */
+
+.bigliettoVisibile {
+  width: 81%;
+  margin: 0 auto;
+  text-align: center;
+ 
+  border-radius: 5px;
+  filter: opacity(1);
+  transition: 0.5s;
+  
+}
+
+.bigliettoVisibile table {
+  background-color: white;
+  width: 71%;
+  height: 100px;
+  text-align: center;
+  margin-left: 13%;
+  border-radius: 5px;
+}
+
+}
+
+.bigliettoVisibile table th {
+  
+  text-align: center;
+}
+.data{
+  font-size: 20px;
+}
+.results{
+  color: #B91450;
+  font-size: 17px;
+}
